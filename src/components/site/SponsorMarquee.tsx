@@ -1,16 +1,17 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { getAssetPath } from "@/lib/assets";
 
 const logos = [
-  { name: "Microsoft", src: "/logos/microsoft.svg" },
-  { name: "GitHub", src: "/logos/github.svg" },
-  { name: "Cloudera", src: "/logos/cloudera.svg" },
-  { name: "Neon", src: "/logos/neon.svg" },
-  { name: "Elastic", src: "/logos/elastic.svg" },
-  { name: "ID8NXT", src: "/logos/id8nxt.svg" },
-  { name: "Azure", src: "/logos/azure.svg" },
-  { name: "Polaris", src: "/logos/polaris.svg" },
-  { name: "Redis", src: "/logos/redis.svg" },
-  { name: "Docker", src: "/logos/docker.svg" },
+  { name: "Microsoft", src: getAssetPath("/logos/microsoft.svg") },
+  { name: "GitHub", src: getAssetPath("/logos/github.svg") },
+  { name: "Cloudera", src: getAssetPath("/logos/cloudera.svg") },
+  { name: "Neon", src: getAssetPath("/logos/neon.svg") },
+  { name: "Elastic", src: getAssetPath("/logos/elastic.svg") },
+  { name: "ID8NXT", src: getAssetPath("/logos/id8nxt.svg") },
+  { name: "Azure", src: getAssetPath("/logos/azure.svg") },
+  { name: "Polaris", src: getAssetPath("/logos/polaris.svg") },
+  { name: "Redis", src: getAssetPath("/logos/redis.svg") },
+  { name: "Docker", src: getAssetPath("/logos/docker.svg") },
 ];
 
 export function SponsorMarquee() {

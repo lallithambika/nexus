@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { site } from "@/content/site";
 import { useActiveSection, scrollToId } from "@/hooks/useActiveSection";
 import { track, PROSPECTUS_URL } from "@/lib/track";
+import { getAssetPath } from "@/lib/assets";
 import {
   Sheet,
   SheetContent,
@@ -50,7 +51,7 @@ export function Navbar() {
             className="flex items-center gap-2 pl-6 shrink-0 group transition-transform duration-300 hover:scale-105"
           >
             <img
-              src="/images/logo.png"
+              src={getAssetPath("/images/logo.png")}
               alt="NexusCon '26"
               className="h-16 w-auto object-contain filter drop-shadow-sm transition-all"
             />

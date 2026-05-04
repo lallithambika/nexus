@@ -1,3 +1,5 @@
+import { getAssetPath } from "@/lib/assets";
+
 // Centralized content. Markdown-style structured data, easily swappable later.
 export const site = {
   brand: "NexusCon'26",
@@ -54,12 +56,12 @@ export const site = {
     "Strong social momentum with 200+ posts, shares and engagement touchpoints per cycle.",
   ],
   speakers: [
-    { name: "Mohamed Azarudeen Z", handle: "@mohamedazarudeen", role: "Speaker", image: "/images/speakers/azar.jpg" },
-    { name: "Vinodh Kumar", handle: "@vinodhkumar", role: "Speaker", image: "/images/speakers/vinodh.jpg" },
-    { name: "To be announced", handle: "@tbd", role: "TBD", image: "/images/speakers/tbd.jpg" },
-    { name: "To be announced", handle: "@tbd", role: "TBD", image: "/images/speakers/tbd.jpg" },
-    { name: "To be announced", handle: "@tbd", role: "TBD", image: "/images/speakers/tbd.jpg" },
-    { name: "To be announced", handle: "@tbd", role: "TBD", image: "/images/speakers/tbd.jpg" },
+    { name: "Mohamed Azarudeen Z", handle: "@mohamedazarudeen", role: "Speaker", image: getAssetPath("/images/speakers/azar.jpg") },
+    { name: "Vinodh Kumar", handle: "@vinodhkumar", role: "Speaker", image: getAssetPath("/images/speakers/vinodh.jpg") },
+    { name: "To be announced", handle: "@tbd", role: "TBD", image: getAssetPath("/images/speakers/tbd.jpg") },
+    { name: "To be announced", handle: "@tbd", role: "TBD", image: getAssetPath("/images/speakers/tbd.jpg") },
+    { name: "To be announced", handle: "@tbd", role: "TBD", image: getAssetPath("/images/speakers/tbd.jpg") },
+    { name: "To be announced", handle: "@tbd", role: "TBD", image: getAssetPath("/images/speakers/tbd.jpg") },
   ],
   sponsorsPrev: [
     "Microsoft", "Azure", "GitHub", "MongoDB", "Postman",
